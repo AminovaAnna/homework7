@@ -67,7 +67,7 @@ public class Main {
         {
             int total = 15000;
             int savings = 0;
-            for ( int i = 0; i < 1158; i++){
+            for ( int i = 0; i <= 108; i++){
                 savings = total * 7 / 100;
                 total = total + savings;
                 if (i % 6 == 0) {
@@ -79,29 +79,22 @@ public class Main {
         System.out.println( );
         {
 
-            int day = 1;
-            int i = 7;
-            do {
-                if (i % 7 == 0){
+
+            int day = 6;
+                for (;day <= 31; day= day+7){
                 System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
                 }
-                i++;
-                day++;
-            }
-            while (day != 31);
         }       //задача7
         System.out.println( );
         {
 
             int yearNow = 2023;
-            int i = 0;
             int yearStart = yearNow - 200;
             int yearFinish = yearNow + 100;
             int year = 0;
             while(year != yearFinish) {
                 year++;
-                i++;
-                if (i % 79 == 0 && year >= yearStart){
+                if (year >= yearStart && year % 79 == 0){
                     System.out.println(year);
                 }
 
