@@ -67,7 +67,7 @@ public class Main {
         {
             int total = 15000;
             int savings = 0;
-            for ( int i = 0; i <= 108; i++){
+            for ( int i = 0; i <= 9 * 12; i++){
                 savings = total * 7 / 100;
                 total = total + savings;
                 if (i % 6 == 0) {
